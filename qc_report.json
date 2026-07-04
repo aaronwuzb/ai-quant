@@ -1,0 +1,291 @@
+{
+  "_meta": {
+    "check_date": "2026-07-04T14:27:53.934004",
+    "spec_version": "v2.0",
+    "total_files": 5
+  },
+  "results": {
+    "中芯国际_sh688981": {
+      "name": "中芯国际",
+      "code": "sh688981",
+      "market": "A",
+      "total_days": 236,
+      "date_range": "2025-07-04~2026-07-03",
+      "checks": {
+        "1_dates": {
+          "name": "日期连续性",
+          "status": "pass",
+          "detail": "236/242 (97.5%)"
+        },
+        "2_price_logic": {
+          "name": "价格逻辑",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "3_volume": {
+          "name": "成交量非负",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "4_gap": {
+          "name": "价格跳空 (>15%)",
+          "status": "pass",
+          "detail": "无异常跳空"
+        },
+        "5_adjust": {
+          "name": "复权一致性",
+          "status": "pass",
+          "detail": "前复权 (qfq)"
+        },
+        "6_completeness": {
+          "name": "数据完整性",
+          "status": "pass",
+          "detail": "实际 236 天 / 预期 242 天"
+        },
+        "7_ah": {
+          "name": "AH 对齐",
+          "status": "pass",
+          "detail": "重叠 229 天, A独有 7, H独有 16"
+        },
+        "8_price_range": {
+          "name": "价格量级合理性",
+          "status": "pass",
+          "detail": "OK"
+        },
+        "9_amount_range": {
+          "name": "成交额量级验证",
+          "status": "pass",
+          "detail": "OK"
+        }
+      },
+      "anomalies": [],
+      "csv_consistency": true,
+      "overall": "pass"
+    },
+    "中芯国际_hk00981": {
+      "name": "中芯国际",
+      "code": "hk00981",
+      "market": "HK",
+      "total_days": 245,
+      "date_range": "2025-07-04~2026-07-03",
+      "checks": {
+        "1_dates": {
+          "name": "日期连续性",
+          "status": "pass",
+          "detail": "245/242 (101.2%)"
+        },
+        "2_price_logic": {
+          "name": "价格逻辑",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "3_volume": {
+          "name": "成交量非负",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "4_gap": {
+          "name": "价格跳空 (>15%)",
+          "status": "pass",
+          "detail": "无异常跳空"
+        },
+        "5_adjust": {
+          "name": "复权一致性",
+          "status": "pass",
+          "detail": "前复权 (qfq)"
+        },
+        "6_completeness": {
+          "name": "数据完整性",
+          "status": "pass",
+          "detail": "实际 245 天 / 预期 242 天"
+        },
+        "7_ah": {
+          "name": "AH 对齐",
+          "status": "N/A"
+        },
+        "8_price_range": {
+          "name": "价格量级合理性",
+          "status": "pass",
+          "detail": "OK"
+        },
+        "9_amount_range": {
+          "name": "成交额量级验证",
+          "status": "pass",
+          "detail": "OK"
+        }
+      },
+      "anomalies": [],
+      "csv_consistency": true,
+      "overall": "pass"
+    },
+    "比亚迪_sz002594": {
+      "name": "比亚迪",
+      "code": "sz002594",
+      "market": "A",
+      "total_days": 242,
+      "date_range": "2025-07-04~2026-07-03",
+      "checks": {
+        "1_dates": {
+          "name": "日期连续性",
+          "status": "pass",
+          "detail": "242/242 (100.0%)"
+        },
+        "2_price_logic": {
+          "name": "价格逻辑",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "3_volume": {
+          "name": "成交量非负",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "4_gap": {
+          "name": "价格跳空 (>15%)",
+          "status": "pass",
+          "detail": "无异常跳空"
+        },
+        "5_adjust": {
+          "name": "复权一致性",
+          "status": "pass",
+          "detail": "前复权 (qfq)"
+        },
+        "6_completeness": {
+          "name": "数据完整性",
+          "status": "pass",
+          "detail": "实际 242 天 / 预期 242 天"
+        },
+        "7_ah": {
+          "name": "AH 对齐",
+          "status": "pass",
+          "detail": "重叠 235 天, A独有 7, H独有 10"
+        },
+        "8_price_range": {
+          "name": "价格量级合理性",
+          "status": "pass",
+          "detail": "OK"
+        },
+        "9_amount_range": {
+          "name": "成交额量级验证",
+          "status": "pass",
+          "detail": "OK"
+        }
+      },
+      "anomalies": [],
+      "csv_consistency": true,
+      "overall": "pass"
+    },
+    "比亚迪_hk01211": {
+      "name": "比亚迪",
+      "code": "hk01211",
+      "market": "HK",
+      "total_days": 245,
+      "date_range": "2025-07-04~2026-07-03",
+      "checks": {
+        "1_dates": {
+          "name": "日期连续性",
+          "status": "pass",
+          "detail": "245/242 (101.2%)"
+        },
+        "2_price_logic": {
+          "name": "价格逻辑",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "3_volume": {
+          "name": "成交量非负",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "4_gap": {
+          "name": "价格跳空 (>15%)",
+          "status": "pass",
+          "detail": "无异常跳空"
+        },
+        "5_adjust": {
+          "name": "复权一致性",
+          "status": "pass",
+          "detail": "前复权 (qfq)"
+        },
+        "6_completeness": {
+          "name": "数据完整性",
+          "status": "pass",
+          "detail": "实际 245 天 / 预期 242 天"
+        },
+        "7_ah": {
+          "name": "AH 对齐",
+          "status": "N/A"
+        },
+        "8_price_range": {
+          "name": "价格量级合理性",
+          "status": "pass",
+          "detail": "OK"
+        },
+        "9_amount_range": {
+          "name": "成交额量级验证",
+          "status": "pass",
+          "detail": "OK"
+        }
+      },
+      "anomalies": [],
+      "csv_consistency": true,
+      "overall": "pass"
+    },
+    "长江电力_sh600900": {
+      "name": "长江电力",
+      "code": "sh600900",
+      "market": "A",
+      "total_days": 242,
+      "date_range": "2025-07-04~2026-07-03",
+      "checks": {
+        "1_dates": {
+          "name": "日期连续性",
+          "status": "pass",
+          "detail": "242/242 (100.0%)"
+        },
+        "2_price_logic": {
+          "name": "价格逻辑",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "3_volume": {
+          "name": "成交量非负",
+          "status": "pass",
+          "detail": "全部通过"
+        },
+        "4_gap": {
+          "name": "价格跳空 (>15%)",
+          "status": "pass",
+          "detail": "无异常跳空"
+        },
+        "5_adjust": {
+          "name": "复权一致性",
+          "status": "pass",
+          "detail": "前复权 (qfq)"
+        },
+        "6_completeness": {
+          "name": "数据完整性",
+          "status": "pass",
+          "detail": "实际 242 天 / 预期 242 天"
+        },
+        "7_ah": {
+          "name": "AH 对齐",
+          "status": "N/A"
+        },
+        "8_price_range": {
+          "name": "价格量级合理性",
+          "status": "pass",
+          "detail": "OK"
+        },
+        "9_amount_range": {
+          "name": "成交额量级验证",
+          "status": "pass",
+          "detail": "OK"
+        }
+      },
+      "anomalies": [],
+      "csv_consistency": true,
+      "overall": "pass"
+    }
+  }
+}

@@ -3,19 +3,16 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>中芯国际 K线分析</title>
+<title>股票数据分析面板</title>
 <style>
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif;
     background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
     min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding: 40px 20px;
 }
-.container { max-width: 720px; width: 100%; }
+.container { max-width: 720px; width: 100%; margin: 0 auto; }
 .header {
     text-align: center;
     margin-bottom: 40px;
@@ -23,7 +20,16 @@ body {
 }
 .header h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
 .header p { font-size: 14px; opacity: 0.65; }
-.cards { display: flex; flex-direction: column; gap: 20px; }
+.stock-group { margin-bottom: 32px; }
+.stock-group h2 {
+    color: rgba(255,255,255,0.7);
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+.cards { display: flex; flex-direction: column; gap: 12px; }
 .card {
     display: flex;
     align-items: center;
@@ -31,8 +37,8 @@ body {
     background: rgba(255,255,255,0.06);
     backdrop-filter: blur(10px);
     border: 1px solid rgba(255,255,255,0.1);
-    border-radius: 16px;
-    padding: 24px 28px;
+    border-radius: 14px;
+    padding: 20px 24px;
     text-decoration: none;
     color: #fff;
     transition: all 0.3s ease;
@@ -43,13 +49,13 @@ body {
     box-shadow: 0 8px 32px rgba(0,0,0,0.3);
 }
 .card-icon {
-    width: 56px;
-    height: 56px;
-    border-radius: 14px;
+    width: 52px;
+    height: 52px;
+    border-radius: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: 700;
     flex-shrink: 0;
 }
@@ -57,11 +63,11 @@ body {
 .card-icon.hk { background: linear-gradient(135deg, #2ba350, #4cd964); }
 .card-icon.cmp { background: linear-gradient(135deg, #667eea, #764ba2); }
 .card-info { flex: 1; }
-.card-info .name { font-size: 18px; font-weight: 600; margin-bottom: 4px; }
-.card-info .code { font-size: 13px; opacity: 0.5; margin-bottom: 6px; }
-.card-info .stats { font-size: 13px; opacity: 0.75; }
+.card-info .name { font-size: 16px; font-weight: 600; margin-bottom: 2px; }
+.card-info .code { font-size: 12px; opacity: 0.5; margin-bottom: 4px; }
+.card-info .stats { font-size: 12px; opacity: 0.75; }
 .card-info .stats span { margin-right: 12px; }
-.arrow { font-size: 20px; opacity: 0.4; }
+.arrow { font-size: 18px; opacity: 0.4; }
 .footer {
     text-align: center;
     margin-top: 40px;
@@ -74,49 +80,81 @@ body {
 <body>
 <div class="container">
     <div class="header">
-        <h1>中芯国际 K线分析</h1>
-        <p>近一年日线走势 · 交互式K线图 + 成交量面板 · 数据截至 2026-07-02</p>
+        <h1>股票数据分析面板</h1>
+        <p>近一年日线 · 交互式 K线图 + 成交量 · 前复权 qfq · 数据截至 2026-07-04</p>
     </div>
-    <div class="cards">
-        <a href="中芯国际_K线分析面板.html" class="card">
-            <div class="card-icon a">A</div>
-            <div class="card-info">
-                <div class="name">中芯国际</div>
-                <div class="code">688981.SH · 科创板</div>
-                <div class="stats">
-                    <span>最新 ¥144.10</span>
-                    <span style="color:#e83939">+67.36%</span>
+
+    <!-- 中芯国际 -->
+    <div class="stock-group">
+        <h2>中芯国际 · 电子 / 集成电路制造</h2>
+        <div class="cards">
+            <a href="中芯国际_K线分析面板.html" class="card">
+                <div class="card-icon a">A</div>
+                <div class="card-info">
+                    <div class="name">中芯国际 A股</div>
+                    <div class="code">688981.SH · 科创板</div>
                 </div>
-            </div>
-            <div class="arrow">→</div>
-        </a>
-        <a href="中芯国际_hk00981_K线分析面板.html" class="card">
-            <div class="card-icon hk">港</div>
-            <div class="card-info">
-                <div class="name">中芯国际</div>
-                <div class="code">00981.HK · 中国香港</div>
-                <div class="stats">
-                    <span>最新 HK$80.40</span>
-                    <span style="color:#e83939">+84.62%</span>
+                <div class="arrow">→</div>
+            </a>
+            <a href="中芯国际_hk00981_K线分析面板.html" class="card">
+                <div class="card-icon hk">港</div>
+                <div class="card-info">
+                    <div class="name">中芯国际 港股</div>
+                    <div class="code">00981.HK · 中国香港</div>
                 </div>
-            </div>
-            <div class="arrow">→</div>
-        </a>
-        <a href="中芯国际_AH对比分析面板.html" class="card">
-            <div class="card-icon cmp">vs</div>
-            <div class="card-info">
-                <div class="name">AH 对比分析</div>
-                <div class="code">688981.SH ↔ 00981.HK</div>
-                <div class="stats">
-                    <span>溢价率 +89.91%</span>
-                    <span style="color:#e83939">230个重叠交易日</span>
+                <div class="arrow">→</div>
+            </a>
+            <a href="中芯国际_AH对比分析面板.html" class="card">
+                <div class="card-icon cmp">vs</div>
+                <div class="card-info">
+                    <div class="name">中芯国际 AH 对比</div>
+                    <div class="code">688981.SH ↔ 00981.HK</div>
                 </div>
-            </div>
-            <div class="arrow">→</div>
-        </a>
+                <div class="arrow">→</div>
+            </a>
+        </div>
     </div>
+
+    <!-- 比亚迪 -->
+    <div class="stock-group">
+        <h2>比亚迪 · 汽车 / 新能源整车</h2>
+        <div class="cards">
+            <a href="比亚迪_K线分析面板.html" class="card">
+                <div class="card-icon a">A</div>
+                <div class="card-info">
+                    <div class="name">比亚迪 A股</div>
+                    <div class="code">002594.SZ · 主板</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+            <a href="比亚迪_AH对比分析面板.html" class="card">
+                <div class="card-icon cmp">vs</div>
+                <div class="card-info">
+                    <div class="name">比亚迪 AH 对比</div>
+                    <div class="code">002594.SZ ↔ 01211.HK</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+    </div>
+
+    <!-- 长江电力 -->
+    <div class="stock-group">
+        <h2>长江电力 · 公用事业 / 水力发电</h2>
+        <div class="cards">
+            <a href="长江电力_K线分析面板.html" class="card">
+                <div class="card-icon a">A</div>
+                <div class="card-info">
+                    <div class="name">长江电力 A股</div>
+                    <div class="code">600900.SH · 主板</div>
+                </div>
+                <div class="arrow">→</div>
+            </a>
+        </div>
+    </div>
+
     <div class="footer">
-        Data by 腾讯自选股 · Powered by ECharts · <a href="https://github.com/aaronwuzb/ai-quant">GitHub</a>
+        Data by akshare (Sina) · Powered by Plotly.js · 规范文件: stock-data-spec.md v2.0
     </div>
 </div>
 </body>
